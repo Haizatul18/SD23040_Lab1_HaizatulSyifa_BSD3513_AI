@@ -11,15 +11,15 @@ st.image("LabReport_BSD2513_#1.jpg", caption="Graph Used for BFS and DFS", use_c
 
 # --- Define the Graph (from the given image) ---
 graph = {
-    'A': ['B', 'D'],
-    'B': ['C', 'E', 'G'],
+    'A': ['D', 'B'],
+    'B': ['C', 'A', 'E', 'G'],
     'C': ['A'],
     'D': ['C'],
     'E': ['H'],
     'F': [],
     'G': ['F'],
     'H': ['F', 'G']
-    }
+}
 
 # --- BFS Function ---
 def bfs(graph, start):
@@ -79,3 +79,4 @@ if st.button("Run Depth-First Search (DFS)"):
 st.write("---")
 st.caption("Developed by: [Haizatul Syifa] — [SD23040]")
 st.caption("Course: BSD3513 — Introduction to Artificial Intelligence")
+
